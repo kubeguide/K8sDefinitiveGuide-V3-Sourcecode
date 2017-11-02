@@ -1,0 +1,12 @@
+kind: PodPreset
+apiVersion: settings.k8s.io/v1alpha1
+metadata:
+  name: myweb-db-setting
+spec:
+  selector:
+    matchLabels:
+      app: myweb
+  envFrom:
+    - configMapRef:
+        name: myweb-env-config
+        

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: myweb-env-config
+data:
+  MYSQL_SERVICE_HOST: "mysql"
+  MYSQL_SERVICE_PORT: "3306" 

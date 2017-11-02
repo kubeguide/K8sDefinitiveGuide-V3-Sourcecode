@@ -1,0 +1,13 @@
+kind: PodPreset
+apiVersion: settings.k8s.io/v1alpha1
+metadata:
+  name: myweb-db-setting
+spec:
+  selector:
+    matchLabels:
+      app: myweb
+  env:
+  - name: MYSQL_SERVICE_HOST
+    value: 'mysql'
+  - name: MYSQL_SERVICE_PORT
+    value: '3306' 
