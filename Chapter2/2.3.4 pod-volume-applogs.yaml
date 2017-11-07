@@ -11,7 +11,7 @@ spec:
     volumeMounts:
     - name: app-logs
       mountPath: /usr/local/tomcat/logs
-  - name: busybox
+  - name: logreader
     image: busybox
     command: ["sh", "-c", "tail -f /logs/catalina*.log"]
     volumeMounts:
